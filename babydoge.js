@@ -100,7 +100,7 @@ class Babydoge {
                 this.log('Điểm danh hàng ngày có sẵn!'.yellow);
                 const claimRes = await this.http(claimUrl, headers, '');
                 if (claimRes.data) {
-                    this.log('Điểm danh hàng ngày thành công!'.green);
+                    this.log('Điểm danh hàng ngày thành công!');
                 } else {
                     this.log('Điểm danh hàng ngày thất bại!'.red);
                 }
@@ -318,7 +318,7 @@ class Babydoge {
             process.exit();
         }
         
-        this.log('Tool được chia sẻ tại kênh telegram Dân Cày Airdrop (@dancayairdrop)'.green);
+        this.log('Tool được chia sẻ tại kênh telegram Dân Cày Airdrop (@dancayairdrop)');
         this.log('query_id chỉ có hạn 1 ngày, nhớ lấy lại mỗi ngày nhé'.magenta);
         console.log(this.line);
     
